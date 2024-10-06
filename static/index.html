@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self'; 
+        script-src 'self'; 
+        img-src 'self' data:; 
+        connect-src 'self';
+        style-src 'self';">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>App</title>
+</head>
+<body>
+    <div id="main-div">
+        <div id="db-actions-form">
+            <div id="db-actions-form-input">
+                <h2>Example form</h2>
+                <label for="input-db-key" class="user-select-none">Key</label>
+                <input type="text" id="input-db-key" placeholder="..."/>
+                
+                <label for="input-db-value" class="user-select-none">Value</label>
+                <input type="text" id="input-db-value" placeholder="..." />
+                
+                <div class="flex-column">
+                    <p>Select data type (testing)<b>put</b></p>
+                    <div>
+                        <label class="box-select-data-type user-select-none">
+                            <input type="radio" name="select-input-data-type" value="A">
+                            String
+                        </label>
+                        <label class="box-select-data-type user-select-none">
+                            <input type="radio" name="select-input-data-type" value="B">
+                            Number
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div id="db-actions-form-btns">
+                <h2>Request</h2>
+                <button id="btn-db-put" class="user-select-none">Put</button>
+                <p>Put the key into database</p>
+                <button id="btn-db-get" class="user-select-none">Get</button>
+                <p>Get value for a key</p>
+                <button id="btn-db-del" class="user-select-none">Delete</button>
+                <p>Delete key from database</p>
+            </div>
+        </div>
+
+        <div id="fake-terminal">
+            <br>
+            <span id="term-log-title">Logs</span>
+            <br>
+        </div>
+    </div>
+    <script type="module" src="../build/renderer/db_request.js"></script>
+    <script type="module" src="../build/renderer/index.js"></script>
+</body>
+</html>

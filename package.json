@@ -1,0 +1,27 @@
+{
+  "name": "electron_project",
+  "version": "1.0.0",
+  "main": "./build/main/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx electron .",
+    "rebuild_main": "npx tsc -p tsconfig.main.json",
+    "rebuild_renderer": "npx tsc -p tsconfig.renderer.json",
+    "rebuild_preload": "npx tsc -p tsconfig.preload.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "electron": "^32.1.2",
+    "level": "^8.0.1"
+  },
+  "devDependencies": {
+    "@types/electron": "^1.4.38",
+    "@types/node": "^22.5.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2",
+    "@types/level": "^6.0.3"
+  }
+}

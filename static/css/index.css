@@ -1,0 +1,298 @@
+@font-face {
+    font-family: 'FiraCode'; 
+    src: url('../images/FiraCode-Regular.ttf') format('truetype'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+@font-face {
+    font-family: 'Ubuntu'; 
+    src: url('../images/Ubuntu-R.ttf') format('truetype'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+body, html
+{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body
+{
+    color: #0091ff;
+    background-color:#ffffff;
+    font-size: 18px;
+    font-family: 'Ubuntu';
+    padding: 0px;
+}
+
+input[type="text"]
+{
+    border: none;               
+    border-bottom: 2px solid #ccc; 
+    outline: none;         
+    padding: 10px;       
+    font-size: 16px;         
+}
+
+input[type="text"]:focus
+{
+    border-style: solid;
+    border-width: 2px;
+    border-color: #007bff;
+}
+
+
+::-webkit-scrollbar
+{
+    width: 2px; 
+    background-color: #1f5370; 
+}
+
+::-webkit-scrollbar-track
+{
+    background: #000000; 
+}
+
+br {
+    user-select: none;
+}
+
+hr
+{
+    color: #11384b;
+}
+
+::selection {
+    background-color: rgba(100, 149, 255, 0.211);
+}
+::-moz-selection {
+    background-color: rgba(100, 149, 255, 0.329); 
+
+}
+
+#main-div
+{
+    background-image: url("../images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    padding-bottom: 40px;
+    position: absolute;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: fit-content;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+#fake-terminal
+{
+    font-family: 'FiraCode';
+    padding: 0px;
+    padding-left: 20px;
+    overflow-y: scroll;
+    font-size: 20px;
+    background-color: #1a1a1a;
+    box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.724);
+    border: 2px solid #e6e6e6;
+    border-radius: 10px;
+    width: 550px;
+    height: 250px;
+    margin: 0px;
+    margin-top: 20px;
+}
+
+#fake-terminal span
+{
+    font-size: 20px;
+}
+
+#main-h1
+{
+    color: #79eb90;
+}
+
+.btn-db
+{
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    user-select: none;
+}
+
+#term-log-title
+{
+    color: #dbdddd;
+}
+
+.term-text-warning
+{
+    font-size: 20px;
+    color:  #f4ff90;
+}
+
+.term-text-error
+{
+    font-size: 20px;
+    color:  #e05843;
+}
+
+.term-text-comment
+{
+    font-size: 20px;
+    color: #4c8eb5;
+}
+
+.term-text-default
+{
+    font-size: 20px;
+    color: #e7f2e2;
+}
+
+#db-actions-form
+{
+    display: flex; 
+    flex-direction: row; 
+    width: fit-content; 
+    height: fit-content;
+    background-color: #1c2f37;
+    box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.442);
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-style: solid;
+    border-color: #264043;
+    border-width: 1px;
+    border-radius: 12px;
+    margin: 0px;
+}
+
+#db-actions-form-input
+{
+    color: #77aebf;
+    display: flex;
+    flex-direction: column;
+}
+
+#db-actions-form-input input
+{
+    font-family: 'FiraCode';
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #132a2e;
+    border-style: solid;
+    border-color: #294b53;
+    border-width: 1px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#db-actions-form-input h2
+{
+    font-weight: normal;
+    color: #ff615e;
+    font-size: 24px;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#db-actions-form-input hr
+{
+    color: #77aebf;
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 15px;
+}
+
+#db-actions-form-input p
+{
+    color: #77aebf;
+    width: 200px;
+    font-size: 16px;
+    margin: 0px;
+}
+
+#db-actions-form-btns
+{
+    background-color: #0f599535;
+   /*border-style: solid;
+    border-width: 1px;
+    border-color: #076e8e;*/
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    border-radius: 6px;
+    margin:0px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#db-actions-form-btns h2
+{
+    font-weight: normal;
+    color: #00d9ff;
+    font-size: 24px;
+    margin: 0px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+#db-actions-form-btns hr
+{
+    color: #025264;
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 15px;
+    padding: 0px;
+}
+#db-actions-form-btns button
+{
+    color: #091f3d;
+    font-weight: bold;
+    font-family: 'FiraCode';
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.115);
+    background-color: #cadde2;
+    border-radius: 5px;
+    width: 100px;
+    font-size: 20px;
+    opacity: 1;
+    border-width: 2px;
+    border-color: #09454e;
+    border-style: solid;
+}
+#db-actions-form-btns button:hover
+{
+    background-color: #eefcff;
+}
+#db-actions-form-btns p
+{
+    color: #5e94bb;
+    /*border-color: #22a3d2;
+    background-color: #1d464e;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;*/
+    padding: 2px;
+    margin: 0px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    width: 200px;
+}
+
+.box-select-data-type
+{
+    color: #8bdb75;
+    margin: 0px;
+    margin-left: 10px;
+}
