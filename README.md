@@ -1,1 +1,1 @@
-![Preview](/static/images/ðemo.png)
+![Preview](/static/images/demo.png)
